@@ -1,0 +1,31 @@
+// поддключаю файл сброса всех настроек
+@import "reset";
+
+// подключаю миксин для шрифтов
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") ("woff"), ("../fonts/#{file_name}.woff2") ("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+// подключаю файл стилей шрифтов
+// @import "fonts";
+// подключаю файл стилей для header
+// @import "header";
+
+// подключаю файл стилей для main
+// @import "main";
+
+
+// подключаю файла стилей для _form_register форма № 1
+// @import "_form_register.scss";
+
+// подключаю файла стилей для _form_register форма № 2
+@import "_form_register2.scss";
+
+// подключаю файл стилей для footer
+// @import "footer";
+
